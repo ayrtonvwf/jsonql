@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://jsonql.github.io/spec/schema/conditional.schema.json",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "operation": {
+            "type": "string",
+            "enum": [
+                "=",
+                "<",
+                "<=",
+                ">",
+                ">=",
+                "!=",
+                "reg"
+            ]
+        },
+        "value": {
+            "type": "string",
+            "description": "The value locator"
+        },
+        "over": {
+            "description": "The value to compare"
+        }
+    },
+    "required": [
+        "name",
+        "operation",
+        "value",
+        "over"
+    ]
+}
