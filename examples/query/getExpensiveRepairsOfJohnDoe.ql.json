@@ -1,0 +1,22 @@
+{
+    "resultRoot": "cars.repairs",
+    "cond": {
+        "conditions": [
+            "getCustomer1",
+            "getExpensiveRepairs"
+        ]
+    },
+    "named": [
+        {
+            "name": "getCustomer1",
+            "operation": "=",
+            "value": "id",
+            "over": 1
+        }, {
+            "name": "getExpensiveRepairs",
+            "operation": ">=",
+            "value": "cars.reparis.price",
+            "over": 1000
+        }
+    ]
+}

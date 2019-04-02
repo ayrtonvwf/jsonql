@@ -1,0 +1,16 @@
+{
+    "type": "mono",
+    "cond": {
+        "conditions": [
+            "customerOfId1"
+        ]
+    },
+    "named": [
+        {
+            "name": "customerOfId1",
+            "operation": "=",
+            "value": "id",
+            "over": 1
+        }
+    ]
+}

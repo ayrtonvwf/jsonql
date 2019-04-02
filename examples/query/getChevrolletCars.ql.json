@@ -1,0 +1,16 @@
+{
+    "resultRoot": "cars",
+    "cond": {
+        "conditions": [
+            "getMakerChevrolett"
+        ]
+    },
+    "named": [
+        {
+            "name": "getMakerChevrolett",
+            "operation": "eq",
+            "value": "cars.maker",
+            "over": "Chevrolett"
+        }
+    ]
+}
