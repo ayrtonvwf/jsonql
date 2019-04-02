@@ -15,8 +15,14 @@
         "conditions": {
             "type": "array",
             "items": {
-                "type": "string",
-                "description": "The name of the named condition"
+                "anyOf": [
+                    {
+                        "$ref": "conditions.schema.json"
+                    }, {
+                        "type": "string",
+                        "description": "The name of the named condition"
+                    }
+                ]
             },
             "uniqueItems": true
         }
