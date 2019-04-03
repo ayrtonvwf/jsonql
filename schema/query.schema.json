@@ -19,13 +19,9 @@
             "type": "array",
             "description": "The fields returned in the result",
             "items": {
-                "type": "string",
-                "description": "A field description",
+                "$ref": "returnField.schema.json",
                 "uniqueItems": true
-            },
-            "default": [
-                "root.*"
-            ]
+            }
         },
         "cond": {
             "$ref": "conditions.schema.json"
@@ -38,5 +34,8 @@
                 "$ref": "conditional.schema.json"
             }
         }
-    }
+    },
+    "required": [
+        "fields"
+    ]
 }

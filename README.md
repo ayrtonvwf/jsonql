@@ -16,9 +16,9 @@ speciality is to query actual data of any complexity.
 See [the schema](schema/query.schema.json)
 
 ### The Property Locator
-A value locator is a string used to identify a property or a set of properties in a dataset structure.
+A Property Locator is a sequence of property names used to identify a nested data point in the data structure.
 
-Example structure:
+Structure example:
 
 ```json
 [
@@ -49,9 +49,8 @@ Example structure:
 ```
 
 Example Property Locators:
-- "users": The "users" of the objects in the root array;
-- "users.name": The "name" property of the objects in the "users" arrays;
-- "!users.id": All the properties except for "id" of the objects in the "users" arrays.
+- ["users"]: The "users" of the objects in the root array;
+- ["users", "name"]: The "name" property of the objects in the "users" arrays;
 
 ## The response
 The response of a query is expected to be an array of objects.
