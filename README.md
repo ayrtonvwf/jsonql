@@ -52,3 +52,10 @@ Example Property Locators:
 - "users": The "users" of the objects in the root array;
 - "users.name": The "name" property of the objects in the "users" arrays;
 - "!users.id": All the properties except for "id" of the objects in the "users" arrays.
+
+## The response
+The response of a query is expected to be an array of objects.
+
+When querying a single object, the array will contain the single object.
+
+When querying a single value, the array will contain a single object with the single property.

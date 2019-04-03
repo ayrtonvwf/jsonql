@@ -5,15 +5,6 @@
     "description": "A query object",
     "type": "object",
     "properties": {
-        "type": {
-            "type": "string",
-            "enum": [
-                "mono",
-                "multi"
-            ],
-            "description": "The type of result",
-            "default": "multi"
-        },
         "resultRoot": {
             "type": "string",
             "description": "The root of the results",
