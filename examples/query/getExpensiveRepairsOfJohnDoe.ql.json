@@ -1,5 +1,14 @@
 {
-    "resultRoot": "cars.repairs",
+    "resultRoot": ["cars", "repairs"],
+    "fields": [
+        {
+            "value": ["cars", "repairs", "id"]
+        }, {
+            "value": ["cars", "repairs", "description"]
+        }, {
+            "value": ["cars", "repairs", "price"]
+        }
+    ],
     "cond": {
         "conditions": [
             "getCustomer1",

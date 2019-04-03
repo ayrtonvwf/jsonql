@@ -1,5 +1,12 @@
 {
-    "resultRoot": "cars",
+    "resultRoot": ["cars"],
+    "fields": [
+        {
+            "value": ["cars", "id"]
+        }, {
+            "value": ["cars", "model"]
+        }
+    ],
     "cond": {
         "conditions": [
             "getMakerChevrolett"

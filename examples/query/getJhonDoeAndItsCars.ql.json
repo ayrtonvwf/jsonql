@@ -1,0 +1,30 @@
+{
+    "fields": [
+        {
+            "value": ["id"]
+        }, {
+            "value": ["name"]
+        }, {
+            "value": ["cars"]
+        }, {
+            "value": ["cars", "id"]
+        }, {
+            "value": ["cars", "maker"]
+        }, {
+            "value": ["cars", "model"]
+        }
+    ],
+    "cond": {
+        "conditions": [
+            "customerOfId1"
+        ]
+    },
+    "named": [
+        {
+            "name": "customerOfId1",
+            "operation": "=",
+            "value": "id",
+            "over": 1
+        }
+    ]
+}

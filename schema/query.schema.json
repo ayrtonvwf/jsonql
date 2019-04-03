@@ -18,18 +18,18 @@
             "default": 0
         },
         "resultRoot": {
-            "type": "string",
-            "description": "The root of the results",
-            "default": ""
+            "$ref": "resourceLocator.schema.json",
+            "description": "The root of the results. Must point to an object.",
+            "default": []
         },
         "root": {
-            "type": "string",
-            "description": "The root of the conditionals",
-            "default": ""
+            "$ref": "resourceLocator.schema.json",
+            "description": "The root of the conditionals. Must point to an object.",
+            "default": []
         },
         "fields": {
             "type": "array",
-            "description": "The fields returned in the result",
+            "description": "The fields returned in the result.",
             "items": {
                 "$ref": "returnField.schema.json",
                 "uniqueItems": true
