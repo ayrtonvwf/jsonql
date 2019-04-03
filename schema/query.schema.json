@@ -5,6 +5,18 @@
     "description": "A query object",
     "type": "object",
     "properties": {
+        "limit": {
+            "type": "integer",
+            "description": "The maximum amount of returned objects. Zero means no limit.",
+            "minimum": 0,
+            "default": 0
+        },
+        "offset": {
+            "type": "integer",
+            "description": "The offset of the returned objects.",
+            "minimum": 0,
+            "default": 0
+        },
         "resultRoot": {
             "type": "string",
             "description": "The root of the results",
