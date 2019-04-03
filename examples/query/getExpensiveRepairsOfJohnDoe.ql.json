@@ -15,7 +15,7 @@
         }, {
             "name": "getExpensiveRepairs",
             "operation": ">=",
-            "value": "cars.reparis.price",
+            "value": "cars.repairs.price",
             "over": 1000
         }
     ]
